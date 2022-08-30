@@ -6,9 +6,7 @@ def run(path):
     path = os.path.expandvars(path)
     if os.path.isabs(path):
         final_output = md5(path)
-        return {
-            "File_hash": final_output
-        }
+        return final_output
 
 
 def md5(file_path):
